@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['b_0',['B',['../classcherrysoda_1_1_color.html#a5161ffd5b830b0f3772ff92287cf2f4f',1,'cherrysoda::Color::B() const'],['../classcherrysoda_1_1_color.html#a50fb00b57ca2f9c998794a7c64c47ee9',1,'cherrysoda::Color::B(float v)'],['../classcherrysoda_1_1_color.html#ab7302a73d423b081580ff851d7ed312c',1,'cherrysoda::Color::B(int v)']]],
+  ['b_0',['B',['../classcherrysoda_1_1_color.html#a50fb00b57ca2f9c998794a7c64c47ee9',1,'cherrysoda::Color::B(float v)'],['../classcherrysoda_1_1_color.html#ab7302a73d423b081580ff851d7ed312c',1,'cherrysoda::Color::B(int v)'],['../classcherrysoda_1_1_color.html#a5161ffd5b830b0f3772ff92287cf2f4f',1,'cherrysoda::Color::B() const']]],
   ['back_1',['Back',['../classcherrysoda_1_1_s_t_l.html#abbf5941b10d4a3f3a11307279f514697',1,'cherrysoda::STL']]],
   ['beforerender_2',['BeforeRender',['../classcherrysoda_1_1_renderer.html#a4e0f5d69b94b6e347c75da505dbe5073',1,'cherrysoda::Renderer::BeforeRender()'],['../classcherrysoda_1_1_scene.html#ac40a1b2f7f29fb0e567f28d5eb4b310a',1,'cherrysoda::Scene::BeforeRender()']]],
   ['beforeupdate_3',['BeforeUpdate',['../classcherrysoda_1_1_scene.html#ad43ed53fabc576c5e76ae52e2f799511',1,'cherrysoda::Scene']]],
