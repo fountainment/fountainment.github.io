@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CherrySoda Engine: /home/even/Projects/cherrysoda-engine/Engine/CherrySoda/InternalUtilities/RendererList.h Source File</title>
+<title>CherrySoda Engine: /Users/shenyiwen/Documents/Projects/cherrysoda-engine/Engine/CherrySoda/InternalUtilities/RendererList.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,7 +82,7 @@ $(function() {
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classcherrysoda_1_1_renderer_list.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="classcherrysoda_1_1_renderer_list.html">RendererList</a></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classcherrysoda_1_1_renderer_list.html#a032858ae1fe02d2d1170981c2af2d67c">   14</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classcherrysoda_1_1_scene.html">Scene</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classcherrysoda_1_1_renderer_list.html#a29aab5d8fec43fa02dff049a51398c0b">   14</a></span>    <a class="code hl_function" href="classcherrysoda_1_1_renderer_list.html#a29aab5d8fec43fa02dff049a51398c0b">CHERRYSODA_ITERABLE</a>(m_renderers);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classcherrysoda_1_1_renderer_list.html#a9dcc5ac17f3772d92f7ad38c9564513d">   16</a></span>    <span class="keyword">typedef</span> <a class="code hl_typedef" href="classcherrysoda_1_1_s_t_l.html#a493fb7d67a7d9d580c4c1e020b76909a">STL::List&lt;Renderer*&gt;</a> <a class="code hl_typedef" href="classcherrysoda_1_1_renderer_list.html#a9dcc5ac17f3772d92f7ad38c9564513d">IterableRenderers</a>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
@@ -93,26 +93,25 @@ $(function() {
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_class" href="classcherrysoda_1_1_renderer.html">Renderer</a>* <a class="code hl_function" href="classcherrysoda_1_1_renderer_list.html#a4900a19b90fb74247e7342c51b463a70">First</a>();</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="classcherrysoda_1_1_renderer_list.html">RendererList</a>(<a class="code hl_class" href="classcherrysoda_1_1_scene.html">Scene</a>* scene);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classcherrysoda_1_1_renderer_list.html#a032858ae1fe02d2d1170981c2af2d67c">   25</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classcherrysoda_1_1_scene.html">Scene</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> UpdateLists();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> Update();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> BeforeRender();</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> Render();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> AfterRender();</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_typedef" href="classcherrysoda_1_1_renderer_list.html#a9dcc5ac17f3772d92f7ad38c9564513d">IterableRenderers</a> m_renderers;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_typedef" href="classcherrysoda_1_1_renderer_list.html#a9dcc5ac17f3772d92f7ad38c9564513d">IterableRenderers</a> m_adding;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_typedef" href="classcherrysoda_1_1_renderer_list.html#a9dcc5ac17f3772d92f7ad38c9564513d">IterableRenderers</a> m_removing;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="classcherrysoda_1_1_scene.html">Scene</a>* m_scene = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classcherrysoda_1_1_renderer_list.html#a29aab5d8fec43fa02dff049a51398c0b">   39</a></span>    <a class="code hl_function" href="classcherrysoda_1_1_renderer_list.html#a29aab5d8fec43fa02dff049a51398c0b">CHERRYSODA_ITERABLE</a>(m_renderers);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>} <span class="comment">// namespace cherrysoda</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">// _CHERRYSODA_INTERNALUTILITIES_RENDERERLIST_H_</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="classcherrysoda_1_1_renderer_list.html">RendererList</a>(<a class="code hl_class" href="classcherrysoda_1_1_scene.html">Scene</a>* scene);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> UpdateLists();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> Update();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> BeforeRender();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> Render();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> AfterRender();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_typedef" href="classcherrysoda_1_1_renderer_list.html#a9dcc5ac17f3772d92f7ad38c9564513d">IterableRenderers</a> m_renderers;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_typedef" href="classcherrysoda_1_1_renderer_list.html#a9dcc5ac17f3772d92f7ad38c9564513d">IterableRenderers</a> m_adding;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_typedef" href="classcherrysoda_1_1_renderer_list.html#a9dcc5ac17f3772d92f7ad38c9564513d">IterableRenderers</a> m_removing;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_class" href="classcherrysoda_1_1_scene.html">Scene</a>* m_scene = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} <span class="comment">// namespace cherrysoda</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">// _CHERRYSODA_INTERNALUTILITIES_RENDERERLIST_H_</span></div>
 <div class="ttc" id="a_s_t_l_8h_html"><div class="ttname"><a href="_s_t_l_8h.html">STL.h</a></div></div>
 <div class="ttc" id="aclasscherrysoda_1_1_renderer_html"><div class="ttname"><a href="classcherrysoda_1_1_renderer.html">cherrysoda::Renderer</a></div><div class="ttdef"><b>Definition:</b> Renderer.h:11</div></div>
 <div class="ttc" id="aclasscherrysoda_1_1_renderer_list_html"><div class="ttname"><a href="classcherrysoda_1_1_renderer_list.html">cherrysoda::RendererList</a></div><div class="ttdef"><b>Definition:</b> RendererList.h:12</div></div>
@@ -122,7 +121,7 @@ $(function() {
 <div class="ttc" id="aclasscherrysoda_1_1_renderer_list_html_a6c0631061c5ebff44d7abf6911eef4cc"><div class="ttname"><a href="classcherrysoda_1_1_renderer_list.html#a6c0631061c5ebff44d7abf6911eef4cc">cherrysoda::RendererList::Add</a></div><div class="ttdeci">void Add(Renderer *renderer)</div><div class="ttdef"><b>Definition:</b> RendererList.cpp:26</div></div>
 <div class="ttc" id="aclasscherrysoda_1_1_renderer_list_html_a9dcc5ac17f3772d92f7ad38c9564513d"><div class="ttname"><a href="classcherrysoda_1_1_renderer_list.html#a9dcc5ac17f3772d92f7ad38c9564513d">cherrysoda::RendererList::IterableRenderers</a></div><div class="ttdeci">STL::List&lt; Renderer * &gt; IterableRenderers</div><div class="ttdef"><b>Definition:</b> RendererList.h:16</div></div>
 <div class="ttc" id="aclasscherrysoda_1_1_renderer_list_html_ad7c68733e896eaa9546c481c201c0cf4"><div class="ttname"><a href="classcherrysoda_1_1_renderer_list.html#ad7c68733e896eaa9546c481c201c0cf4">cherrysoda::RendererList::MoveToFront</a></div><div class="ttdeci">void MoveToFront(Renderer *renderer)</div><div class="ttdef"><b>Definition:</b> RendererList.cpp:20</div></div>
-<div class="ttc" id="aclasscherrysoda_1_1_s_t_l_html_a493fb7d67a7d9d580c4c1e020b76909a"><div class="ttname"><a href="classcherrysoda_1_1_s_t_l.html#a493fb7d67a7d9d580c4c1e020b76909a">cherrysoda::STL::List</a></div><div class="ttdeci">std::list&lt; T &gt; List</div><div class="ttdef"><b>Definition:</b> STL.h:67</div></div>
+<div class="ttc" id="aclasscherrysoda_1_1_s_t_l_html_a493fb7d67a7d9d580c4c1e020b76909a"><div class="ttname"><a href="classcherrysoda_1_1_s_t_l.html#a493fb7d67a7d9d580c4c1e020b76909a">cherrysoda::STL::List</a></div><div class="ttdeci">std::list&lt; T &gt; List</div><div class="ttdef"><b>Definition:</b> STL.h:68</div></div>
 <div class="ttc" id="aclasscherrysoda_1_1_scene_html"><div class="ttname"><a href="classcherrysoda_1_1_scene.html">cherrysoda::Scene</a></div><div class="ttdef"><b>Definition:</b> Scene.h:18</div></div>
 <div class="ttc" id="anamespacecherrysoda_html"><div class="ttname"><a href="namespacecherrysoda.html">cherrysoda</a></div><div class="ttdef"><b>Definition:</b> Audio.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->

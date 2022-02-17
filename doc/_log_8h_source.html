@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CherrySoda Engine: /home/even/Projects/cherrysoda-engine/Engine/CherrySoda/Util/Log.h Source File</title>
+<title>CherrySoda Engine: /Users/shenyiwen/Documents/Projects/cherrysoda-engine/Engine/CherrySoda/Util/Log.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -78,7 +78,7 @@ $(function() {
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifdef CHERRYSODA_ENABLE_DEBUG</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#   define CHERRYSODA_DEBUG(output)                 cherrysoda::Log::DebugOutput(output)</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#   define CHERRYSODA_DEBUG_CHANNEL(output,channel) cherrysoda::Log::DebugOutput(output,channel)</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#   define CHERRYSODA_ASSERT(condition,output)      if(!(condition)){CHERRYSODA_DEBUG(output);assert(0);}</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#   define CHERRYSODA_ASSERT(condition,output)      do{if(!(condition)){CHERRYSODA_DEBUG(output);assert(0);}}while(0)</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="_log_8h.html#a221b8eb37c23d8fb440cb330c8cd3bb1">   12</a></span><span class="preprocessor">#   define CHERRYSODA_DEBUG(output)</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="_log_8h.html#a5da9d94915c7bbfac84afad832304749">   13</a></span><span class="preprocessor">#   define CHERRYSODA_DEBUG_CHANNEL(output,channel)</span></div>

@@ -5,7 +5,7 @@ var searchData=
   ['launchapplication1_2',['LaunchApplication1',['../namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219ad48b6d57a1819a8e3e49d8c3d4ce7b51',1,'cherrysoda']]],
   ['launchapplication2_3',['LaunchApplication2',['../namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219a7039b07547dd9d5d70c7be1823653606',1,'cherrysoda']]],
   ['launchmail_4',['LaunchMail',['../namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219a3306698f0c5c6aacb96a3b7793e4f88c',1,'cherrysoda']]],
-  ['left_5',['Left',['../namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219a945d5e233cf7d6240f6b783b36a374ff',1,'cherrysoda::Left()'],['../namespacecherrysoda.html#ac94ec90eebcf977cdc18fc23b4f3c55da945d5e233cf7d6240f6b783b36a374ff',1,'cherrysoda::Left()']]],
+  ['left_5',['Left',['../namespacecherrysoda.html#ac94ec90eebcf977cdc18fc23b4f3c55da945d5e233cf7d6240f6b783b36a374ff',1,'cherrysoda::Left()'],['../namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219a945d5e233cf7d6240f6b783b36a374ff',1,'cherrysoda::Left()']]],
   ['leftalt_6',['LeftAlt',['../namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219a96f9c4eb595a467d02e35c723f63ebf7',1,'cherrysoda']]],
   ['leftcontrol_7',['LeftControl',['../namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219a641642d3718d5db8994a79d51b43e88c',1,'cherrysoda']]],
   ['leftshift_8',['LeftShift',['../namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219a982621712db76f723b7bb88b631dc64d',1,'cherrysoda']]],

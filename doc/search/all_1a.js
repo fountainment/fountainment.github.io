@@ -10,5 +10,6 @@ var searchData=
   ['_7escene_7',['~Scene',['../classcherrysoda_1_1_scene.html#a3b8cec2e32546713915f8c6303c951f1',1,'cherrysoda::Scene']]],
   ['_7esprite_8',['~Sprite',['../classcherrysoda_1_1_sprite.html#a74a19f47e9e16e598280fce1e3283597',1,'cherrysoda::Sprite']]],
   ['_7espritebank_9',['~SpriteBank',['../classcherrysoda_1_1_sprite_bank.html#aeba3b75bf9c39b2c04015e58e5979b55',1,'cherrysoda::SpriteBank']]],
-  ['_7espritedata_10',['~SpriteData',['../classcherrysoda_1_1_sprite_data.html#a3aff8dfe5947f6db8a206fd9ee313181',1,'cherrysoda::SpriteData']]]
+  ['_7espritedata_10',['~SpriteData',['../classcherrysoda_1_1_sprite_data.html#a3aff8dfe5947f6db8a206fd9ee313181',1,'cherrysoda::SpriteData']]],
+  ['_7evirtualmap_11',['~VirtualMap',['../classcherrysoda_1_1_virtual_map.html#a55b0c180f0e75d673719c5e5c0738816',1,'cherrysoda::VirtualMap']]]
 ];

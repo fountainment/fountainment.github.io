@@ -141,6 +141,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3deffe46d7091dc20b63a64ee1d4c156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc1ae6de8856b1199cc9e747a4a448f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_entity.html#adc1ae6de8856b1199cc9e747a4a448f5">CollideCheck</a> (const <a class="el" href="classcherrysoda_1_1_entity.html">Entity</a> *other, const <a class="el" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">Math::Vec2</a> &amp;at)</td></tr>
 <tr class="separator:adc1ae6de8856b1199cc9e747a4a448f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa886858c264d91125996200952cc1074"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_entity.html#aa886858c264d91125996200952cc1074">CollideCheck</a> (const <a class="el" href="classcherrysoda_1_1_collidable_component.html">CollidableComponent</a> *other) const</td></tr>
+<tr class="separator:aa886858c264d91125996200952cc1074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ede48c39ffa89eafc788aa9bdf1f6de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_entity.html#a8ede48c39ffa89eafc788aa9bdf1f6de">CollideCheck</a> (const <a class="el" href="classcherrysoda_1_1_collidable_component.html">CollidableComponent</a> *other, const <a class="el" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">Math::Vec2</a> &amp;at)</td></tr>
+<tr class="separator:a8ede48c39ffa89eafc788aa9bdf1f6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac125c03564f10f76e0af723d668f7571"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_entity.html#ac125c03564f10f76e0af723d668f7571">CollidePoint</a> (const <a class="el" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">Math::Vec2</a> &amp;point) const</td></tr>
 <tr class="separator:ac125c03564f10f76e0af723d668f7571"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae18ab7c989d832bede9316338782e044"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_entity.html#ae18ab7c989d832bede9316338782e044">CollideLine</a> (const <a class="el" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">Math::Vec2</a> &amp;from, const <a class="el" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">Math::Vec2</a> &amp;to) const</td></tr>
@@ -526,7 +530,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="ae4ab6c36e881b17fc0b57a28e747d1aa" name="ae4ab6c36e881b17fc0b57a28e747d1aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4ab6c36e881b17fc0b57a28e747d1aa">&#9670;&nbsp;</a></span>CollideCheck() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4ab6c36e881b17fc0b57a28e747d1aa">&#9670;&nbsp;</a></span>CollideCheck() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -544,7 +548,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a6dce0e09bb668aa0216aae5863db0dc2" name="a6dce0e09bb668aa0216aae5863db0dc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dce0e09bb668aa0216aae5863db0dc2">&#9670;&nbsp;</a></span>CollideCheck() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dce0e09bb668aa0216aae5863db0dc2">&#9670;&nbsp;</a></span>CollideCheck() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -571,8 +575,54 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="aa886858c264d91125996200952cc1074" name="aa886858c264d91125996200952cc1074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa886858c264d91125996200952cc1074">&#9670;&nbsp;</a></span>CollideCheck() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Entity::CollideCheck </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcherrysoda_1_1_collidable_component.html">CollidableComponent</a> *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ede48c39ffa89eafc788aa9bdf1f6de" name="a8ede48c39ffa89eafc788aa9bdf1f6de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ede48c39ffa89eafc788aa9bdf1f6de">&#9670;&nbsp;</a></span>CollideCheck() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Entity::CollideCheck </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcherrysoda_1_1_collidable_component.html">CollidableComponent</a> *&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">Math::Vec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>at</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3deffe46d7091dc20b63a64ee1d4c156" name="a3deffe46d7091dc20b63a64ee1d4c156"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3deffe46d7091dc20b63a64ee1d4c156">&#9670;&nbsp;</a></span>CollideCheck() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3deffe46d7091dc20b63a64ee1d4c156">&#9670;&nbsp;</a></span>CollideCheck() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -590,7 +640,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="adc1ae6de8856b1199cc9e747a4a448f5" name="adc1ae6de8856b1199cc9e747a4a448f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc1ae6de8856b1199cc9e747a4a448f5">&#9670;&nbsp;</a></span>CollideCheck() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adc1ae6de8856b1199cc9e747a4a448f5">&#9670;&nbsp;</a></span>CollideCheck() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1424,8 +1474,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/even/Projects/cherrysoda-engine/Engine/CherrySoda/<a class="el" href="_entity_8h_source.html">Entity.h</a></li>
-<li>/home/even/Projects/cherrysoda-engine/Engine/CherrySoda/<a class="el" href="_entity_8cpp.html">Entity.cpp</a></li>
+<li>/Users/shenyiwen/Documents/Projects/cherrysoda-engine/Engine/CherrySoda/<a class="el" href="_entity_8h_source.html">Entity.h</a></li>
+<li>/Users/shenyiwen/Documents/Projects/cherrysoda-engine/Engine/CherrySoda/<a class="el" href="_entity_8cpp.html">Entity.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

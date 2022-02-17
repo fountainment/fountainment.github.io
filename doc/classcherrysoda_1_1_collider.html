@@ -81,8 +81,9 @@ Inheritance diagram for cherrysoda::Collider:</div>
  <div class="center">
   <img src="classcherrysoda_1_1_collider.png" usemap="#cherrysoda::Collider_map" alt=""/>
   <map id="cherrysoda::Collider_map" name="cherrysoda::Collider_map">
-<area href="classcherrysoda_1_1_circle.html" alt="cherrysoda::Circle" shape="rect" coords="0,56,127,80"/>
-<area href="classcherrysoda_1_1_hitbox.html" alt="cherrysoda::Hitbox" shape="rect" coords="137,56,264,80"/>
+<area href="classcherrysoda_1_1_circle.html" alt="cherrysoda::Circle" shape="rect" coords="0,56,146,80"/>
+<area href="classcherrysoda_1_1_collider_list.html" alt="cherrysoda::ColliderList" shape="rect" coords="156,56,302,80"/>
+<area href="classcherrysoda_1_1_hitbox.html" alt="cherrysoda::Hitbox" shape="rect" coords="312,56,458,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -96,14 +97,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a825ce02088671bb360d159515cd228c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceb1d4cf6e5811d86195d00040942e39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#aceb1d4cf6e5811d86195d00040942e39">Collide</a> (const <a class="el" href="classcherrysoda_1_1_entity.html">Entity</a> *entity) const</td></tr>
 <tr class="separator:aceb1d4cf6e5811d86195d00040942e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca31d82485e5b9735fa33844606c852c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#aca31d82485e5b9735fa33844606c852c">Collide</a> (const <a class="el" href="classcherrysoda_1_1_collidable_component.html">CollidableComponent</a> *component) const</td></tr>
+<tr class="separator:aca31d82485e5b9735fa33844606c852c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e5252f96168ddcb5922b764656ad196"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#a8e5252f96168ddcb5922b764656ad196">Collide</a> (const <a class="el" href="classcherrysoda_1_1_collider.html">Collider</a> *collider) const</td></tr>
 <tr class="separator:a8e5252f96168ddcb5922b764656ad196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8191bddd66d4f88749d8f25a7524bc13"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#a8191bddd66d4f88749d8f25a7524bc13">Collide</a> (const <a class="el" href="classcherrysoda_1_1_circle.html">Circle</a> *circle) const =0</td></tr>
 <tr class="separator:a8191bddd66d4f88749d8f25a7524bc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc5011fd3c9e5011ab92fce39346b0fc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#acc5011fd3c9e5011ab92fce39346b0fc">Collide</a> (const <a class="el" href="classcherrysoda_1_1_hitbox.html">Hitbox</a> *hitbox) const =0</td></tr>
 <tr class="separator:acc5011fd3c9e5011ab92fce39346b0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b4ef8cb331985d7e0ada9e4ec8259f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#a15b4ef8cb331985d7e0ada9e4ec8259f">Collide</a> (const <a class="el" href="classcherrysoda_1_1_collider_list.html">ColliderList</a> *list) const =0</td></tr>
+<tr class="separator:a15b4ef8cb331985d7e0ada9e4ec8259f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53d8c584952ae8deb88086f277199d40"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#a53d8c584952ae8deb88086f277199d40">Collide</a> (const <a class="el" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">Math::Vec2</a> &amp;point) const =0</td></tr>
 <tr class="separator:a53d8c584952ae8deb88086f277199d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca2e63a75e312542fa67d0895257f36"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#a6ca2e63a75e312542fa67d0895257f36">Collide</a> (const <a class="el" href="structcherrysoda_1_1_math_1_1_rectangle.html">Math::Rectangle</a> &amp;rect) const =0</td></tr>
+<tr class="separator:a6ca2e63a75e312542fa67d0895257f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42029b1281a452c5840191dd399f7b4a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#a42029b1281a452c5840191dd399f7b4a">Collide</a> (const <a class="el" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">Math::Vec2</a> &amp;from, const <a class="el" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">Math::Vec2</a> &amp;to) const =0</td></tr>
 <tr class="separator:a42029b1281a452c5840191dd399f7b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a918a1d495762de654009dcaf53db582e"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#a918a1d495762de654009dcaf53db582e">Left</a> () const =0</td></tr>
@@ -133,6 +140,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:af6ccea87e51c352074704f2358bf442a"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#af6ccea87e51c352074704f2358bf442a">CollidableComponent</a></td></tr>
+<tr class="separator:af6ccea87e51c352074704f2358bf442a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748b1b4dd0ecc69fff83c47031ff14ae"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#a748b1b4dd0ecc69fff83c47031ff14ae">ColliderList</a></td></tr>
+<tr class="separator:a748b1b4dd0ecc69fff83c47031ff14ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a614439ccac0344926adc4c0165d64060"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_collider.html#a614439ccac0344926adc4c0165d64060">Entity</a></td></tr>
 <tr class="separator:a614439ccac0344926adc4c0165d64060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -261,7 +272,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#a08face0723d1b29229b59b4b2037a68d">cherrysoda::Circle</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#afc041168da3533393114e75066c0a4cc">cherrysoda::Hitbox</a>.</p>
+<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#a08face0723d1b29229b59b4b2037a68d">cherrysoda::Circle</a>, <a class="el" href="classcherrysoda_1_1_collider_list.html#a93c6459361cb7088c4b4a48aea27b440">cherrysoda::ColliderList</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#afc041168da3533393114e75066c0a4cc">cherrysoda::Hitbox</a>.</p>
 
 </div>
 </div>
@@ -294,7 +305,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a8191bddd66d4f88749d8f25a7524bc13" name="a8191bddd66d4f88749d8f25a7524bc13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8191bddd66d4f88749d8f25a7524bc13">&#9670;&nbsp;</a></span>Collide() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8191bddd66d4f88749d8f25a7524bc13">&#9670;&nbsp;</a></span>Collide() <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,12 +328,30 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#a788960235aad6265c1c4e47f8fb7a6fb">cherrysoda::Circle</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#a1a560a14d5722966756d3d80fd43c647">cherrysoda::Hitbox</a>.</p>
+<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#a788960235aad6265c1c4e47f8fb7a6fb">cherrysoda::Circle</a>, <a class="el" href="classcherrysoda_1_1_collider_list.html#a0a0b6546a58d0cff4d3e0b6b460ab792">cherrysoda::ColliderList</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#a1a560a14d5722966756d3d80fd43c647">cherrysoda::Hitbox</a>.</p>
+
+</div>
+</div>
+<a id="aca31d82485e5b9735fa33844606c852c" name="aca31d82485e5b9735fa33844606c852c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca31d82485e5b9735fa33844606c852c">&#9670;&nbsp;</a></span>Collide() <span class="overload">[2/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Collider::Collide </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcherrysoda_1_1_collidable_component.html">CollidableComponent</a> *&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <a id="a8e5252f96168ddcb5922b764656ad196" name="a8e5252f96168ddcb5922b764656ad196"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e5252f96168ddcb5922b764656ad196">&#9670;&nbsp;</a></span>Collide() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e5252f96168ddcb5922b764656ad196">&#9670;&nbsp;</a></span>Collide() <span class="overload">[3/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,8 +368,36 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a15b4ef8cb331985d7e0ada9e4ec8259f" name="a15b4ef8cb331985d7e0ada9e4ec8259f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b4ef8cb331985d7e0ada9e4ec8259f">&#9670;&nbsp;</a></span>Collide() <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool cherrysoda::Collider::Collide </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcherrysoda_1_1_collider_list.html">ColliderList</a> *&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#acf3e8fff8abc7fb8afc5abb798f6a401">cherrysoda::Circle</a>, <a class="el" href="classcherrysoda_1_1_collider_list.html#a3c1cbee730f6eb32da3972d789ade866">cherrysoda::ColliderList</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#ae874eaea89e063eece0d40f361267a78">cherrysoda::Hitbox</a>.</p>
+
+</div>
+</div>
 <a id="aceb1d4cf6e5811d86195d00040942e39" name="aceb1d4cf6e5811d86195d00040942e39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aceb1d4cf6e5811d86195d00040942e39">&#9670;&nbsp;</a></span>Collide() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb1d4cf6e5811d86195d00040942e39">&#9670;&nbsp;</a></span>Collide() <span class="overload">[5/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,7 +423,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="acc5011fd3c9e5011ab92fce39346b0fc" name="acc5011fd3c9e5011ab92fce39346b0fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc5011fd3c9e5011ab92fce39346b0fc">&#9670;&nbsp;</a></span>Collide() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5011fd3c9e5011ab92fce39346b0fc">&#9670;&nbsp;</a></span>Collide() <span class="overload">[6/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,12 +446,40 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#aad2c2d9e812b37c7592c50b51ae712a4">cherrysoda::Circle</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#afc9de2d5796d9e94b2770bf246a01337">cherrysoda::Hitbox</a>.</p>
+<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#aad2c2d9e812b37c7592c50b51ae712a4">cherrysoda::Circle</a>, <a class="el" href="classcherrysoda_1_1_collider_list.html#a8ccc051163f4df75adfde8c53d69bb8a">cherrysoda::ColliderList</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#afc9de2d5796d9e94b2770bf246a01337">cherrysoda::Hitbox</a>.</p>
+
+</div>
+</div>
+<a id="a6ca2e63a75e312542fa67d0895257f36" name="a6ca2e63a75e312542fa67d0895257f36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca2e63a75e312542fa67d0895257f36">&#9670;&nbsp;</a></span>Collide() <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool cherrysoda::Collider::Collide </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcherrysoda_1_1_math_1_1_rectangle.html">Math::Rectangle</a> &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#aeab6b9bc40a3120e29c91e914eb5a3d8">cherrysoda::Circle</a>, <a class="el" href="classcherrysoda_1_1_collider_list.html#afa336d88cae15ba837f4a5826e378374">cherrysoda::ColliderList</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#a8cf488f99ea75ce85b8b9fca446404e5">cherrysoda::Hitbox</a>.</p>
 
 </div>
 </div>
 <a id="a42029b1281a452c5840191dd399f7b4a" name="a42029b1281a452c5840191dd399f7b4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42029b1281a452c5840191dd399f7b4a">&#9670;&nbsp;</a></span>Collide() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a42029b1281a452c5840191dd399f7b4a">&#9670;&nbsp;</a></span>Collide() <span class="overload">[8/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -427,12 +512,12 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#a9b42e8ee148715a5c984b4688a2fa4ff">cherrysoda::Circle</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#a03d2350bd6deea4366cb8e88ad104c22">cherrysoda::Hitbox</a>.</p>
+<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#a9b42e8ee148715a5c984b4688a2fa4ff">cherrysoda::Circle</a>, <a class="el" href="classcherrysoda_1_1_collider_list.html#ac6f908e6b50172eab7f35197f3fbc135">cherrysoda::ColliderList</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#a03d2350bd6deea4366cb8e88ad104c22">cherrysoda::Hitbox</a>.</p>
 
 </div>
 </div>
 <a id="a53d8c584952ae8deb88086f277199d40" name="a53d8c584952ae8deb88086f277199d40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53d8c584952ae8deb88086f277199d40">&#9670;&nbsp;</a></span>Collide() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a53d8c584952ae8deb88086f277199d40">&#9670;&nbsp;</a></span>Collide() <span class="overload">[9/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,7 +540,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#ac014fe83100e57b464d8d59f81c9135c">cherrysoda::Circle</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#aafb3eb05deeb8d4db704cfd539a5a40f">cherrysoda::Hitbox</a>.</p>
+<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#ac014fe83100e57b464d8d59f81c9135c">cherrysoda::Circle</a>, <a class="el" href="classcherrysoda_1_1_collider_list.html#ad22c76d5b1a87bcc75f429dc87023e59">cherrysoda::ColliderList</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#aafb3eb05deeb8d4db704cfd539a5a40f">cherrysoda::Hitbox</a>.</p>
 
 </div>
 </div>
@@ -532,7 +617,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#aa75dbaa3c5e5a73454227d594afe84fd">cherrysoda::Circle</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#ae6929a1332b7e70919affbce88988f64">cherrysoda::Hitbox</a>.</p>
+<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#aa75dbaa3c5e5a73454227d594afe84fd">cherrysoda::Circle</a>, <a class="el" href="classcherrysoda_1_1_collider_list.html#a07a9852765cdcaf1987df647a72835a3">cherrysoda::ColliderList</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#ae6929a1332b7e70919affbce88988f64">cherrysoda::Hitbox</a>.</p>
 
 </div>
 </div>
@@ -588,7 +673,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#a55c784ffecb81082cb72fc177667c45d">cherrysoda::Circle</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#aecd20a24eb809e2eefcb4ddc8a709693">cherrysoda::Hitbox</a>.</p>
+<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#a55c784ffecb81082cb72fc177667c45d">cherrysoda::Circle</a>, <a class="el" href="classcherrysoda_1_1_collider_list.html#a9a95675007ba51f18a51527936cf5d3d">cherrysoda::ColliderList</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#aecd20a24eb809e2eefcb4ddc8a709693">cherrysoda::Hitbox</a>.</p>
 
 </div>
 </div>
@@ -615,7 +700,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#a1e9f7374707738d984cb954b1400cb85">cherrysoda::Circle</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#a81fe5e24174cc407e656a7c2f0b0afa8">cherrysoda::Hitbox</a>.</p>
+<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#a1e9f7374707738d984cb954b1400cb85">cherrysoda::Circle</a>, <a class="el" href="classcherrysoda_1_1_collider_list.html#a72e8bc075dae92332337ef4ec6debb23">cherrysoda::ColliderList</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#a81fe5e24174cc407e656a7c2f0b0afa8">cherrysoda::Hitbox</a>.</p>
 
 </div>
 </div>
@@ -642,7 +727,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#acee143160441b78d9aa08c0853f06774">cherrysoda::Circle</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#a0d4917e1cb5801e844fd9d3590357e11">cherrysoda::Hitbox</a>.</p>
+<p>Implemented in <a class="el" href="classcherrysoda_1_1_circle.html#acee143160441b78d9aa08c0853f06774">cherrysoda::Circle</a>, <a class="el" href="classcherrysoda_1_1_collider_list.html#aa93ad71d14b7c2f4bc5b460d7638e938">cherrysoda::ColliderList</a>, and <a class="el" href="classcherrysoda_1_1_hitbox.html#a0d4917e1cb5801e844fd9d3590357e11">cherrysoda::Hitbox</a>.</p>
 
 </div>
 </div>
@@ -697,6 +782,50 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="af6ccea87e51c352074704f2358bf442a" name="af6ccea87e51c352074704f2358bf442a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6ccea87e51c352074704f2358bf442a">&#9670;&nbsp;</a></span>CollidableComponent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classcherrysoda_1_1_collidable_component.html">CollidableComponent</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a748b1b4dd0ecc69fff83c47031ff14ae" name="a748b1b4dd0ecc69fff83c47031ff14ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a748b1b4dd0ecc69fff83c47031ff14ae">&#9670;&nbsp;</a></span>ColliderList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classcherrysoda_1_1_collider_list.html">ColliderList</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a614439ccac0344926adc4c0165d64060" name="a614439ccac0344926adc4c0165d64060"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a614439ccac0344926adc4c0165d64060">&#9670;&nbsp;</a></span>Entity</h2>
 
@@ -720,8 +849,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/even/Projects/cherrysoda-engine/Engine/CherrySoda/Colliders/<a class="el" href="_collider_8h_source.html">Collider.h</a></li>
-<li>/home/even/Projects/cherrysoda-engine/Engine/CherrySoda/Colliders/<a class="el" href="_collider_8cpp.html">Collider.cpp</a></li>
+<li>/Users/shenyiwen/Documents/Projects/cherrysoda-engine/Engine/CherrySoda/Colliders/<a class="el" href="_collider_8h_source.html">Collider.h</a></li>
+<li>/Users/shenyiwen/Documents/Projects/cherrysoda-engine/Engine/CherrySoda/Colliders/<a class="el" href="_collider_8cpp.html">Collider.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
