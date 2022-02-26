@@ -85,10 +85,10 @@ $(function() {
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">        cherrysoda::StringUtil::SafeTo&lt;TYPE&gt;(args[0],VAR); \</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">    cherrysoda::Commands::Log(cherrysoda::StringUtil::ToString(VAR)); \</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">    cherrysoda::Commands::Return(static_cast&lt;float&gt;(VAR)); \</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">},HELP);</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">},HELP)</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_commands_8h.html#a616ebb5fe2c6fb63d282f0da95937a7f">   19</a></span><span class="preprocessor">#define CHERRYSODA_REGISTER_COMMAND(COMMAND,FUNC,HELP) \</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">static cherrysoda::CommandRegisterHelper CHERRYSODA_COMMAND_REGISTER_HELPER_##COMMAND(#COMMAND,FUNC,HELP);</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">static cherrysoda::CommandRegisterHelper CHERRYSODA_COMMAND_REGISTER_HELPER_##COMMAND(#COMMAND,FUNC,HELP)</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_commands_8h.html#a61f7420a7939ad164fad5d6c0f77bf6a">   22</a></span><span class="preprocessor">#define CHERRYSODA_COMMAND(COMMAND,HELP) \</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">void CherrySodaCommand_##COMMAND(const cherrysoda::STL::Vector&lt;cherrysoda::String&gt;&amp; args); \</span></div>

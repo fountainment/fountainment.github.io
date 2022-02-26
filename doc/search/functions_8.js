@@ -17,7 +17,7 @@ var searchData=
   ['internal_5fsetactualdepth_14',['INTERNAL_SetActualDepth',['../classcherrysoda_1_1_scene.html#a320f8240cfc6d16224e78fa2256d038e',1,'cherrysoda::Scene']]],
   ['internalgetkey_15',['InternalGetKey',['../structcherrysoda_1_1_m_input_1_1_keyboard_state.html#a63f1fe1c0d317a295749ba3d4269d622',1,'cherrysoda::MInput::KeyboardState']]],
   ['internalsetkey_16',['InternalSetKey',['../structcherrysoda_1_1_m_input_1_1_keyboard_state.html#ac4e9f24cc802103060c950826162bc11',1,'cherrysoda::MInput::KeyboardState']]],
-  ['intersects_17',['Intersects',['../classcherrysoda_1_1_hitbox.html#a7d1e40dc26236241959ec5bac6dcbe1d',1,'cherrysoda::Hitbox']]],
+  ['intersects_17',['Intersects',['../structcherrysoda_1_1_math_1_1_rectangle.html#a1348fa4d120aa159c1ce76ff82288595',1,'cherrysoda::Math::Rectangle::Intersects()'],['../classcherrysoda_1_1_hitbox.html#a7d1e40dc26236241959ec5bac6dcbe1d',1,'cherrysoda::Hitbox::Intersects()']]],
   ['invert_18',['Invert',['../classcherrysoda_1_1_ease.html#aeb74dfef87739d82a42d684ff1df341d',1,'cherrysoda::Ease']]],
   ['ipaused_19',['IPaused',['../structcherrysoda_1_1_audio_1_1_event_instance.html#a2d11764304e03fb02f0f1ffce4078108',1,'cherrysoda::Audio::EventInstance']]],
   ['isactive_20',['IsActive',['../classcherrysoda_1_1_engine.html#a1143b58f4dda072087276c34bda867c0',1,'cherrysoda::Engine']]],
@@ -29,7 +29,7 @@ var searchData=
   ['isnotempty_26',['IsNotEmpty',['../classcherrysoda_1_1_s_t_l.html#a741ce4ba949dab00d26a50fe29f5b30e',1,'cherrysoda::STL']]],
   ['isoriginbottomleft_27',['IsOriginBottomLeft',['../classcherrysoda_1_1_graphics.html#aa21443822f99d43fbd4d38d39d0f5bf9',1,'cherrysoda::Graphics']]],
   ['ispaused_28',['IsPaused',['../classcherrysoda_1_1_audio.html#a0b8a60bfda5128f60fcef14d5928957e',1,'cherrysoda::Audio']]],
-  ['isplaying_29',['IsPlaying',['../structcherrysoda_1_1_audio_1_1_event_instance.html#a1dd1b4fdc29c568b85b299a544323e56',1,'cherrysoda::Audio::EventInstance::IsPlaying()'],['../classcherrysoda_1_1_audio.html#a8252a1353b89b4eaed726aae05eb1944',1,'cherrysoda::Audio::IsPlaying()'],['../classcherrysoda_1_1_sprite.html#a7abe32f669f5a7849312e71419a9243e',1,'cherrysoda::Sprite::IsPlaying()']]],
+  ['isplaying_29',['IsPlaying',['../structcherrysoda_1_1_audio_1_1_event_instance.html#a1dd1b4fdc29c568b85b299a544323e56',1,'cherrysoda::Audio::EventInstance::IsPlaying()'],['../classcherrysoda_1_1_audio.html#a8252a1353b89b4eaed726aae05eb1944',1,'cherrysoda::Audio::IsPlaying()'],['../classcherrysoda_1_1_sprite.html#a7abe32f669f5a7849312e71419a9243e',1,'cherrysoda::Sprite::IsPlaying()'],['../classcherrysoda_1_1_sprite_sheet.html#a6a4d9974d332b25b267f91db14fa799f',1,'cherrysoda::SpriteSheet::IsPlaying()']]],
   ['isstopped_30',['IsStopped',['../structcherrysoda_1_1_audio_1_1_event_instance.html#aaf76d03f207e7bbb7ecfa73698ffe870',1,'cherrysoda::Audio::EventInstance::IsStopped()'],['../classcherrysoda_1_1_audio.html#abbb89661f6f09eca0ce5f432c7cb7947',1,'cherrysoda::Audio::IsStopped()']]],
   ['isvalid_31',['IsValid',['../structcherrysoda_1_1_audio_1_1_event_instance.html#a05a2d7d970364834ad35785c7f20c1bb',1,'cherrysoda::Audio::EventInstance::IsValid()'],['../classcherrysoda_1_1_mesh.html#aaebe6e173712ebf17cb7a2df980cb96a',1,'cherrysoda::Mesh::IsValid()'],['../classcherrysoda_1_1_m_texture.html#a79032d14b72848757fcaaf93516c53cb',1,'cherrysoda::MTexture::IsValid()'],['../classcherrysoda_1_1_texture.html#aed5a0d2a121103965b12d676478eb263',1,'cherrysoda::Texture::IsValid()']]]
 ];

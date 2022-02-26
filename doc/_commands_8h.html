@@ -97,7 +97,7 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a15fb4378ccb02b5cdfd87998cd25c2c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#a15fb4378ccb02b5cdfd87998cd25c2c0">CHERRYSODA_CONSOLE_VARIABLE</a>(VAR,  TYPE,  VALUE,  HELP)</td></tr>
 <tr class="separator:a15fb4378ccb02b5cdfd87998cd25c2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a616ebb5fe2c6fb63d282f0da95937a7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#a616ebb5fe2c6fb63d282f0da95937a7f">CHERRYSODA_REGISTER_COMMAND</a>(COMMAND,  FUNC,  HELP)&#160;&#160;&#160;static <a class="el" href="classcherrysoda_1_1_command_register_helper.html">cherrysoda::CommandRegisterHelper</a> CHERRYSODA_COMMAND_REGISTER_HELPER_##COMMAND(#COMMAND,FUNC,HELP);</td></tr>
+<tr class="memitem:a616ebb5fe2c6fb63d282f0da95937a7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#a616ebb5fe2c6fb63d282f0da95937a7f">CHERRYSODA_REGISTER_COMMAND</a>(COMMAND,  FUNC,  HELP)&#160;&#160;&#160;static <a class="el" href="classcherrysoda_1_1_command_register_helper.html">cherrysoda::CommandRegisterHelper</a> CHERRYSODA_COMMAND_REGISTER_HELPER_##COMMAND(#COMMAND,FUNC,HELP)</td></tr>
 <tr class="separator:a616ebb5fe2c6fb63d282f0da95937a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61f7420a7939ad164fad5d6c0f77bf6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#a61f7420a7939ad164fad5d6c0f77bf6a">CHERRYSODA_COMMAND</a>(COMMAND,  HELP)</td></tr>
 <tr class="separator:a61f7420a7939ad164fad5d6c0f77bf6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,7 +180,7 @@ Macros</h2></td></tr>
 <div class="line">        cherrysoda::StringUtil::SafeTo&lt;TYPE&gt;(args[0],VAR); <a class="code hl_function" href="classcherrysoda_1_1_commands.html#abadd8aa0a5a1c2ea5a37045c1d1c4914">\</a></div>
 <div class="line"><a class="code hl_function" href="classcherrysoda_1_1_commands.html#abadd8aa0a5a1c2ea5a37045c1d1c4914">	cherrysoda::Commands::Log</a>(<a class="code hl_function" href="classcherrysoda_1_1_string_util.html#a6a63683ed31bd1f599afea8b50ade7f2">cherrysoda::StringUtil::ToString</a>(VAR)); <a class="code hl_function" href="classcherrysoda_1_1_commands.html#a6819a0774e3c6f38cc4483b9500d523e">\</a></div>
 <div class="line"><a class="code hl_function" href="classcherrysoda_1_1_commands.html#a6819a0774e3c6f38cc4483b9500d523e">	cherrysoda::Commands::Return</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(VAR)); \</div>
-<div class="line">},HELP);</div>
+<div class="line">},HELP)</div>
 <div class="ttc" id="aclasscherrysoda_1_1_command_register_helper_html"><div class="ttname"><a href="classcherrysoda_1_1_command_register_helper.html">cherrysoda::CommandRegisterHelper</a></div><div class="ttdef"><b>Definition:</b> Commands.h:138</div></div>
 <div class="ttc" id="aclasscherrysoda_1_1_commands_html_a6819a0774e3c6f38cc4483b9500d523e"><div class="ttname"><a href="classcherrysoda_1_1_commands.html#a6819a0774e3c6f38cc4483b9500d523e">cherrysoda::Commands::Return</a></div><div class="ttdeci">static void Return(float f)</div><div class="ttdef"><b>Definition:</b> Commands.cpp:144</div></div>
 <div class="ttc" id="aclasscherrysoda_1_1_commands_html_abadd8aa0a5a1c2ea5a37045c1d1c4914"><div class="ttname"><a href="classcherrysoda_1_1_commands.html#abadd8aa0a5a1c2ea5a37045c1d1c4914">cherrysoda::Commands::Log</a></div><div class="ttdeci">static void Log(const String &amp;str, const Color &amp;color=Color::White)</div><div class="ttdef"><b>Definition:</b> Commands.cpp:135</div></div>
@@ -216,7 +216,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;static <a class="el" href="classcherrysoda_1_1_command_register_helper.html">cherrysoda::CommandRegisterHelper</a> CHERRYSODA_COMMAND_REGISTER_HELPER_##COMMAND(#COMMAND,FUNC,HELP);</td>
+          <td></td><td>&#160;&#160;&#160;static <a class="el" href="classcherrysoda_1_1_command_register_helper.html">cherrysoda::CommandRegisterHelper</a> CHERRYSODA_COMMAND_REGISTER_HELPER_##COMMAND(#COMMAND,FUNC,HELP)</td>
         </tr>
       </table>
 </div><div class="memdoc">

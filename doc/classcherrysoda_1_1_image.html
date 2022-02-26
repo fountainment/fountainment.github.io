@@ -80,9 +80,10 @@ Inheritance diagram for cherrysoda::Image:</div>
  <div class="center">
   <img src="classcherrysoda_1_1_image.png" usemap="#cherrysoda::Image_map" alt=""/>
   <map id="cherrysoda::Image_map" name="cherrysoda::Image_map">
-<area href="classcherrysoda_1_1_graphics_component.html" alt="cherrysoda::GraphicsComponent" shape="rect" coords="0,56,197,80"/>
-<area href="classcherrysoda_1_1_component.html" alt="cherrysoda::Component" shape="rect" coords="0,0,197,24"/>
+<area href="classcherrysoda_1_1_graphics_component.html" alt="cherrysoda::GraphicsComponent" shape="rect" coords="103,56,300,80"/>
+<area href="classcherrysoda_1_1_component.html" alt="cherrysoda::Component" shape="rect" coords="103,0,300,24"/>
 <area href="classcherrysoda_1_1_sprite.html" alt="cherrysoda::Sprite" shape="rect" coords="0,168,197,192"/>
+<area href="classcherrysoda_1_1_sprite_sheet.html" alt="cherrysoda::SpriteSheet&lt; T &gt;" shape="rect" coords="207,168,404,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -100,10 +101,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a13555ce85cf55e4175e5c19f02b74fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fca286b0378615e6ed1f4ad0ab1e089"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_image.html#a8fca286b0378615e6ed1f4ad0ab1e089">Texture</a> (const <a class="el" href="classcherrysoda_1_1_m_texture.html">MTexture</a> &amp;texture)</td></tr>
 <tr class="separator:a8fca286b0378615e6ed1f4ad0ab1e089"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac11b112c1dd8c21fe7c54a1d6cb9b300"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_image.html#ac11b112c1dd8c21fe7c54a1d6cb9b300">Width</a> () const</td></tr>
-<tr class="separator:ac11b112c1dd8c21fe7c54a1d6cb9b300"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec85290815455540671e74194c6b00e5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_image.html#aec85290815455540671e74194c6b00e5">Height</a> () const</td></tr>
-<tr class="separator:aec85290815455540671e74194c6b00e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37742ef263506075f363747d5c86844"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_image.html#ae37742ef263506075f363747d5c86844">Width</a> () const</td></tr>
+<tr class="separator:ae37742ef263506075f363747d5c86844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193e640c9e55486d02ae8c872dbced35"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_image.html#a193e640c9e55486d02ae8c872dbced35">Height</a> () const</td></tr>
+<tr class="separator:a193e640c9e55486d02ae8c872dbced35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34e2908d9d31bb490781dc4f215abc56"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">Math::Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_image.html#a34e2908d9d31bb490781dc4f215abc56">Size</a> () const</td></tr>
 <tr class="separator:a34e2908d9d31bb490781dc4f215abc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a850e9dbeac3d5c7d665a791935558f35"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">Math::Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_image.html#a850e9dbeac3d5c7d665a791935558f35">HalfSize</a> () const</td></tr>
@@ -488,8 +489,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aec85290815455540671e74194c6b00e5" name="aec85290815455540671e74194c6b00e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec85290815455540671e74194c6b00e5">&#9670;&nbsp;</a></span>Height()</h2>
+<a id="a193e640c9e55486d02ae8c872dbced35" name="a193e640c9e55486d02ae8c872dbced35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a193e640c9e55486d02ae8c872dbced35">&#9670;&nbsp;</a></span>Height()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,7 +499,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float cherrysoda::Image::Height </td>
+          <td class="memname">virtual float cherrysoda::Image::Height </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -506,10 +507,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classcherrysoda_1_1_sprite_sheet.html#ab76c0ad6d8031771690b88b38158cd70">cherrysoda::SpriteSheet&lt; T &gt;</a>.</p>
 
 </div>
 </div>
@@ -599,6 +602,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classcherrysoda_1_1_component.html#a22275746474021b2e1e36d4a58d48cfd">cherrysoda::Component</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classcherrysoda_1_1_sprite_sheet.html#a6d8a102e636bb5d7d1b3486556f8266b">cherrysoda::SpriteSheet&lt; T &gt;</a>.</p>
 
 </div>
 </div>
@@ -740,8 +745,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac11b112c1dd8c21fe7c54a1d6cb9b300" name="ac11b112c1dd8c21fe7c54a1d6cb9b300"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac11b112c1dd8c21fe7c54a1d6cb9b300">&#9670;&nbsp;</a></span>Width()</h2>
+<a id="ae37742ef263506075f363747d5c86844" name="ae37742ef263506075f363747d5c86844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae37742ef263506075f363747d5c86844">&#9670;&nbsp;</a></span>Width()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -750,7 +755,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float cherrysoda::Image::Width </td>
+          <td class="memname">virtual float cherrysoda::Image::Width </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -758,10 +763,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classcherrysoda_1_1_sprite_sheet.html#a7af26cba2673001f7dd031e67bc03497">cherrysoda::SpriteSheet&lt; T &gt;</a>.</p>
 
 </div>
 </div>

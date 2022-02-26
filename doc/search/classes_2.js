@@ -19,5 +19,6 @@ var searchData=
   ['commands_16',['Commands',['../classcherrysoda_1_1_commands.html',1,'cherrysoda']]],
   ['commandtrienode_17',['CommandTrieNode',['../struct_command_trie_node.html',1,'']]],
   ['component_18',['Component',['../classcherrysoda_1_1_component.html',1,'cherrysoda']]],
-  ['componentlist_19',['ComponentList',['../classcherrysoda_1_1_component_list.html',1,'cherrysoda']]]
+  ['componentlist_19',['ComponentList',['../classcherrysoda_1_1_component_list.html',1,'cherrysoda']]],
+  ['counterset_20',['CounterSet',['../classcherrysoda_1_1_counter_set.html',1,'cherrysoda']]]
 ];
