@@ -75,6 +75,15 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_pool_8h_source.html">Pool.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for cherrysoda::Pool&lt; T, SIZE &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classcherrysoda_1_1_pool.png" usemap="#cherrysoda::Pool_3C_20T_2C_20SIZE_20_3E_map" alt=""/>
+  <map id="cherrysoda::Pool_3C_20T_2C_20SIZE_20_3E_map" name="cherrysoda::Pool_3C_20T_2C_20SIZE_20_3E_map">
+<area href="classcherrysoda_1_1_pool_interface.html" alt="cherrysoda::PoolInterface" shape="rect" coords="0,0,176,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -92,12 +101,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2705b4830d7706d5832fb25c1e021f7b"><td class="memTemplParams" colspan="2">template&lt;typename... TT&gt; </td></tr>
 <tr class="memitem:a2705b4830d7706d5832fb25c1e021f7b"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_pool.html#a2705b4830d7706d5832fb25c1e021f7b">Create</a> (TT... TTs)</td></tr>
 <tr class="separator:a2705b4830d7706d5832fb25c1e021f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e4c9d7e0f6847b7e7a8a9149ac8a835"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_pool.html#a7e4c9d7e0f6847b7e7a8a9149ac8a835">Destroy</a> (void *ptr)</td></tr>
-<tr class="separator:a7e4c9d7e0f6847b7e7a8a9149ac8a835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54fa80bc60932e63aa8ee852dc46d255"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_pool.html#a54fa80bc60932e63aa8ee852dc46d255">INTERNAL_Hide</a> (void *ptr) override</td></tr>
+<tr class="separator:a54fa80bc60932e63aa8ee852dc46d255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8d185b1c28e8f6b3e1d3c4a9da7be7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_pool.html#a7a8d185b1c28e8f6b3e1d3c4a9da7be7">INTERNAL_Destroy</a> (void *ptr) override</td></tr>
+<tr class="separator:a7a8d185b1c28e8f6b3e1d3c4a9da7be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03b83a82861388154a393e97f943a45c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_pool.html#a03b83a82861388154a393e97f943a45c">Traverse</a> (<a class="el" href="classcherrysoda_1_1_s_t_l.html#a398383b5bf9084ef6f3325ea2931be7e">STL::Action</a>&lt; T * &gt; action)</td></tr>
 <tr class="separator:a03b83a82861388154a393e97f943a45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa86ce100754afb0abdc74222893866d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_pool.html#aa86ce100754afb0abdc74222893866d1">Clear</a> ()</td></tr>
-<tr class="separator:aa86ce100754afb0abdc74222893866d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e8648c4356c32640ffc1669a7f569a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_pool.html#af1e8648c4356c32640ffc1669a7f569a">INTERNAL_Clear</a> ()</td></tr>
+<tr class="separator:af1e8648c4356c32640ffc1669a7f569a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc02035bca907bc49a38e54c3d17016"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_pool_interface.html#a2cc02035bca907bc49a38e54c3d17016">INTERNAL_Hide</a> (void *ptr)=0</td></tr>
+<tr class="separator:a2cc02035bca907bc49a38e54c3d17016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798780461735065173b748a1564acfbb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcherrysoda_1_1_pool_interface.html#a798780461735065173b748a1564acfbb">INTERNAL_Destroy</a> (void *ptr)=0</td></tr>
+<tr class="separator:a798780461735065173b748a1564acfbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aaf0bb7657d7b21d278c42d75d8f38adf" name="aaf0bb7657d7b21d278c42d75d8f38adf"></a>
@@ -172,33 +187,6 @@ template&lt;typename T , <a class="el" href="namespacecherrysoda_1_1type.html#ac
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa86ce100754afb0abdc74222893866d1" name="aa86ce100754afb0abdc74222893866d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa86ce100754afb0abdc74222893866d1">&#9670;&nbsp;</a></span>Clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , <a class="el" href="namespacecherrysoda_1_1type.html#acf5b853abada2d64f9bcef8644b72be7">type::UInt16</a> SIZE&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classcherrysoda_1_1_pool.html">cherrysoda::Pool</a>&lt; T, SIZE &gt;::Clear </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2705b4830d7706d5832fb25c1e021f7b" name="a2705b4830d7706d5832fb25c1e021f7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2705b4830d7706d5832fb25c1e021f7b">&#9670;&nbsp;</a></span>Create()</h2>
 
@@ -229,8 +217,8 @@ template&lt;typename... TT&gt; </div>
 
 </div>
 </div>
-<a id="a7e4c9d7e0f6847b7e7a8a9149ac8a835" name="a7e4c9d7e0f6847b7e7a8a9149ac8a835"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e4c9d7e0f6847b7e7a8a9149ac8a835">&#9670;&nbsp;</a></span>Destroy()</h2>
+<a id="af1e8648c4356c32640ffc1669a7f569a" name="af1e8648c4356c32640ffc1669a7f569a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e8648c4356c32640ffc1669a7f569a">&#9670;&nbsp;</a></span>INTERNAL_Clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,10 +229,9 @@ template&lt;typename T , <a class="el" href="namespacecherrysoda_1_1type.html#ac
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classcherrysoda_1_1_pool.html">cherrysoda::Pool</a>&lt; T, SIZE &gt;::Destroy </td>
+          <td class="memname">void <a class="el" href="classcherrysoda_1_1_pool.html">cherrysoda::Pool</a>&lt; T, SIZE &gt;::INTERNAL_Clear </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -254,6 +241,66 @@ template&lt;typename T , <a class="el" href="namespacecherrysoda_1_1type.html#ac
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a8d185b1c28e8f6b3e1d3c4a9da7be7" name="a7a8d185b1c28e8f6b3e1d3c4a9da7be7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a8d185b1c28e8f6b3e1d3c4a9da7be7">&#9670;&nbsp;</a></span>INTERNAL_Destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="namespacecherrysoda_1_1type.html#acf5b853abada2d64f9bcef8644b72be7">type::UInt16</a> SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcherrysoda_1_1_pool.html">cherrysoda::Pool</a>&lt; T, SIZE &gt;::INTERNAL_Destroy </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classcherrysoda_1_1_pool_interface.html#a798780461735065173b748a1564acfbb">cherrysoda::PoolInterface</a>.</p>
+
+</div>
+</div>
+<a id="a54fa80bc60932e63aa8ee852dc46d255" name="a54fa80bc60932e63aa8ee852dc46d255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54fa80bc60932e63aa8ee852dc46d255">&#9670;&nbsp;</a></span>INTERNAL_Hide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="namespacecherrysoda_1_1type.html#acf5b853abada2d64f9bcef8644b72be7">type::UInt16</a> SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcherrysoda_1_1_pool.html">cherrysoda::Pool</a>&lt; T, SIZE &gt;::INTERNAL_Hide </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classcherrysoda_1_1_pool_interface.html#a2cc02035bca907bc49a38e54c3d17016">cherrysoda::PoolInterface</a>.</p>
 
 </div>
 </div>

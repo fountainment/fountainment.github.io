@@ -426,8 +426,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [](<span class="keywordtype">float</span> t)</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">if</span> (t &lt; .5f)</div>
-<div class="line">        {</div>
+<div class="line">        <span class="keywordflow">if</span> (t &lt; .5f) {</div>
 <div class="line">            t = 1 - t * 2;</div>
 <div class="line">            <span class="keywordflow">if</span> (t &lt; <a class="code hl_variable" href="_ease_8cpp.html#a34c964ce29156fedc10b5442e9fee219">B1</a>)</div>
 <div class="line">                <span class="keywordflow">return</span> (1 - 7.5625f * t * t) / 2;</div>
