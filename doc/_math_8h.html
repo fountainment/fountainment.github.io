@@ -196,6 +196,8 @@ Macros</h2></td></tr>
 <tr class="separator:a30e3438558890a7984385645ea634c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7a95e5ec886fceaf44d14cfd0d7fa76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_8h.html#af7a95e5ec886fceaf44d14cfd0d7fa76">Math_Dot</a>&#160;&#160;&#160;glm::dot</td></tr>
 <tr class="separator:af7a95e5ec886fceaf44d14cfd0d7fa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac39cf0a764cff5fc684e3b7785c1e8c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_8h.html#ac39cf0a764cff5fc684e3b7785c1e8c0">Math_Degrees</a>&#160;&#160;&#160;glm::degrees</td></tr>
+<tr class="separator:ac39cf0a764cff5fc684e3b7785c1e8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34290cd034a6b4172fec2e71464adb1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_8h.html#a34290cd034a6b4172fec2e71464adb1f">Math_Floor</a>&#160;&#160;&#160;glm::floor</td></tr>
 <tr class="separator:a34290cd034a6b4172fec2e71464adb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff01a1e2d42700d6fad6f33efd2bec10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_8h.html#aff01a1e2d42700d6fad6f33efd2bec10">Math_Length</a>&#160;&#160;&#160;glm::length</td></tr>
@@ -498,7 +500,7 @@ Macros</h2></td></tr>
 <div class="line">    inline <span class="keywordtype">float</span> NAME##<a class="code hl_enumvalue" href="namespacecherrysoda.html#a69278cb6adc469f53c47a2335ca07283a57cec4137b614c87cb4e24a3d003a3e0">Y</a>()<span class="keyword"> const </span>{ EXTRA_GET_OP; <span class="keywordflow">return</span> VALUE.y; } \</div>
 <div class="line">    inline <span class="keywordtype">void</span> NAME##<a class="code hl_enumvalue" href="namespacecherrysoda.html#a69278cb6adc469f53c47a2335ca07283a02129bb861061d1a052c592e2dc6b383">X</a>(<span class="keywordtype">float</span> x) { NAME(<a class="code hl_typedef" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">cherrysoda::Math::Vec2</a>(x, VALUE.y)); } \</div>
 <div class="line">    inline <span class="keywordtype">void</span> NAME##<a class="code hl_enumvalue" href="namespacecherrysoda.html#a69278cb6adc469f53c47a2335ca07283a57cec4137b614c87cb4e24a3d003a3e0">Y</a>(<span class="keywordtype">float</span> y) { NAME(<a class="code hl_typedef" href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">cherrysoda::Math::Vec2</a>(VALUE.x, y)); }</div>
-<div class="ttc" id="aclasscherrysoda_1_1_math_html_ab708bfd22c20fc3ae358c3211f649f5a"><div class="ttname"><a href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">cherrysoda::Math::Vec2</a></div><div class="ttdeci">glm::vec2 Vec2</div><div class="ttdef"><b>Definition:</b> Math.h:203</div></div>
+<div class="ttc" id="aclasscherrysoda_1_1_math_html_ab708bfd22c20fc3ae358c3211f649f5a"><div class="ttname"><a href="classcherrysoda_1_1_math.html#ab708bfd22c20fc3ae358c3211f649f5a">cherrysoda::Math::Vec2</a></div><div class="ttdeci">glm::vec2 Vec2</div><div class="ttdef"><b>Definition:</b> Math.h:205</div></div>
 <div class="ttc" id="anamespacecherrysoda_html_a69278cb6adc469f53c47a2335ca07283a02129bb861061d1a052c592e2dc6b383"><div class="ttname"><a href="namespacecherrysoda.html#a69278cb6adc469f53c47a2335ca07283a02129bb861061d1a052c592e2dc6b383">cherrysoda::Buttons::X</a></div><div class="ttdeci">@ X</div></div>
 <div class="ttc" id="anamespacecherrysoda_html_a69278cb6adc469f53c47a2335ca07283a57cec4137b614c87cb4e24a3d003a3e0"><div class="ttname"><a href="namespacecherrysoda.html#a69278cb6adc469f53c47a2335ca07283a57cec4137b614c87cb4e24a3d003a3e0">cherrysoda::Buttons::Y</a></div><div class="ttdeci">@ Y</div></div>
 </div><!-- fragment -->
@@ -559,7 +561,7 @@ Macros</h2></td></tr>
 <div class="line">    inline <span class="keywordtype">void</span> NAME##<a class="code hl_enumvalue" href="namespacecherrysoda.html#a69278cb6adc469f53c47a2335ca07283a02129bb861061d1a052c592e2dc6b383">X</a>(<span class="keywordtype">float</span> x) { NAME(<a class="code hl_typedef" href="classcherrysoda_1_1_math.html#ad65a8c9832e7a975ecfe93e423fe8d5e">cherrysoda::Math::Vec3</a>(x, VALUE.y, VALUE.z)); } \</div>
 <div class="line">    inline <span class="keywordtype">void</span> NAME##<a class="code hl_enumvalue" href="namespacecherrysoda.html#a69278cb6adc469f53c47a2335ca07283a57cec4137b614c87cb4e24a3d003a3e0">Y</a>(<span class="keywordtype">float</span> y) { NAME(<a class="code hl_typedef" href="classcherrysoda_1_1_math.html#ad65a8c9832e7a975ecfe93e423fe8d5e">cherrysoda::Math::Vec3</a>(VALUE.x, y, VALUE.z)); } \</div>
 <div class="line">    inline <span class="keywordtype">void</span> NAME##<a class="code hl_enumvalue" href="namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219a21c2e59531c8710156d34a3c30ac81d5">Z</a>(<span class="keywordtype">float</span> z) { NAME(<a class="code hl_typedef" href="classcherrysoda_1_1_math.html#ad65a8c9832e7a975ecfe93e423fe8d5e">cherrysoda::Math::Vec3</a>(VALUE.x, VALUE.y, z)); }</div>
-<div class="ttc" id="aclasscherrysoda_1_1_math_html_ad65a8c9832e7a975ecfe93e423fe8d5e"><div class="ttname"><a href="classcherrysoda_1_1_math.html#ad65a8c9832e7a975ecfe93e423fe8d5e">cherrysoda::Math::Vec3</a></div><div class="ttdeci">glm::vec3 Vec3</div><div class="ttdef"><b>Definition:</b> Math.h:204</div></div>
+<div class="ttc" id="aclasscherrysoda_1_1_math_html_ad65a8c9832e7a975ecfe93e423fe8d5e"><div class="ttname"><a href="classcherrysoda_1_1_math.html#ad65a8c9832e7a975ecfe93e423fe8d5e">cherrysoda::Math::Vec3</a></div><div class="ttdeci">glm::vec3 Vec3</div><div class="ttdef"><b>Definition:</b> Math.h:206</div></div>
 <div class="ttc" id="anamespacecherrysoda_html_ac4511e57b9951201ef5a5d7cc7d96219a21c2e59531c8710156d34a3c30ac81d5"><div class="ttname"><a href="namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219a21c2e59531c8710156d34a3c30ac81d5">cherrysoda::Keys::Z</a></div><div class="ttdeci">@ Z</div></div>
 <div class="ttc" id="anamespacecherrysoda_html_ac4511e57b9951201ef5a5d7cc7d96219af623e75af30e62bbd73d6df5b50bb7b5"><div class="ttname"><a href="namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219af623e75af30e62bbd73d6df5b50bb7b5">cherrysoda::Keys::D</a></div><div class="ttdeci">@ D</div></div>
 </div><!-- fragment -->
@@ -943,6 +945,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define Math_Cross&#160;&#160;&#160;glm::cross</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac39cf0a764cff5fc684e3b7785c1e8c0" name="ac39cf0a764cff5fc684e3b7785c1e8c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac39cf0a764cff5fc684e3b7785c1e8c0">&#9670;&nbsp;</a></span>Math_Degrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Math_Degrees&#160;&#160;&#160;glm::degrees</td>
         </tr>
       </table>
 </div><div class="memdoc">

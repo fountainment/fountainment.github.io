@@ -66,58 +66,62 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p ><a class="anchor" id="md__Users_shenyiwen_Documents_Projects_cherrysoda_engine_README"></a> <a href="https://github.com/fountainment/cherrysoda-engine/actions/workflows/windows.yml"><img src="https://github.com/fountainment/cherrysoda-engine/actions/workflows/windows.yml/badge.svg" alt="Windows" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/fountainment/cherrysoda-engine/actions/workflows/linux.yml"><img src="https://github.com/fountainment/cherrysoda-engine/actions/workflows/linux.yml/badge.svg" alt="Linux" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/fountainment/cherrysoda-engine/actions/workflows/macos.yml"><img src="https://github.com/fountainment/cherrysoda-engine/actions/workflows/macos.yml/badge.svg" alt="MacOS" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/fountainment/cherrysoda-engine/actions/workflows/emscripten.yml"><img src="https://github.com/fountainment/cherrysoda-engine/actions/workflows/emscripten.yml/badge.svg" alt="Emscripten" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/fountainment/cherrysoda-engine/blob/master/LICENSE"><img src="https://img.shields.io/github/license/fountainment/cherrysoda-engine" alt="Licence" class="inline"/></a></p>
-<p >A lightweight cross-platform C++ game engine based on bgfx and SDL2 (inspired by Monocle engine)</p>
+<p >A lightweight cross-platform C++ game engine based on bgfx and SDL2</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Introduction</h1>
-<p >This is an engine I made for anticipating gamejam.</p>
-<p >In 2018, I tried using Monocle engine (the engine of the game Celeste) which is written in C#. Its design is quite simple and handy, then I wonder if I can use it to make game for different platforms.</p>
-<p >The result is this engine, it ported most parts of Monocle engine, and added some useful features. I have to admit that the port quality is not very good, anyway, after a few gamejams, it's basically usable now.</p>
+<p >CherrySoda engine is a C++ port of Monocle engine, with some changes and additional functionalities.</p>
+<p >In 2018, I tried using Monocle engine (the engine of the game Celeste) which is written in C#. Its design is quite simple and handy for making 2d sprite game, so I wish like to combine it with my previous C++ cross-platform experience.</p>
+<p >This engine ported most parts of Monocle engine to C++, and added some useful features like simple audio playback. Command console UI are rewritten in ImGui with a parameter tweaking slider. And some minor changes are made in order to get 3d capability, but this engine is still mainly for 2d.</p>
+<p >It's a hobby project, and tbh, the code quality is not very good for the moment, but it's basically ok to be used in some small 2d games, I used it to participate in several gamejams.</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
+Screenshots</h1>
+<p ><img src="https://user-images.githubusercontent.com/8925165/158010302-c24ca486-272c-4a51-9d42-e3904b696c00.png" alt="image" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Demos</h1>
 <p ><a href="https://fountainment.github.io/demo/">https://fountainment.github.io/demo/</a></p>
 <p >Demo source:</p><ul>
 <li><a href="https://github.com/fountainment/bullethelljam2021-bullethelltrial">BulletHellJam2021_BulletHellTrial</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 API Document</h1>
 <p ><a href="https://fountainment.github.io/doc/">https://fountainment.github.io/doc/</a></p>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md5"></a>
 Pros and Cons</h1>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 Pros</h2>
 <ul>
-<li>The engine code is less than 20k lines, which means it only take a very limitted time to read through</li>
-<li>And it's not too time consuming to build this engine on low-end devices like PocketCHIP and GameShell (sometimes the cross compiling environment is hard to establish)</li>
-<li>The webassembly build size can be very small (mininal around 2 MB), so it will load fast on web</li>
+<li>Core engine code is less than 20k lines, so, build time will be short, and build size will be small</li>
+<li>The sprite animation import can be fully data driven and is very handy imo</li>
+<li>The BitTag utility makes rendering and collision logic coding very intuitive</li>
 <li>Some tedious workflow processes are handled by python script</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Cons</h2>
 <ul>
 <li>This engine only support a very limitted amount of features (see Current Features)</li>
 <li>There is no scripting support, all game coding needs to be done in C++</li>
-<li>The memory management is not done well at the moment</li>
+<li>The memory management is not done elegantly at the moment</li>
 <li>This engine requires the user to be comfortable with command-line workflow</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Current Features</h1>
 <ul>
 <li>Features Ported From Monocle Engine:<ul>
 <li>Entity-Component System</li>
-<li>BitTag and Tag-Based Renderer</li>
-<li>2D Sprite Animation System</li>
-<li>2D Collision Detection</li>
+<li>2D Sprite Animation System (very handy imo)</li>
+<li>Tag-Based Renderer</li>
+<li>Tag-Based 2D Collision Detection</li>
 <li>2D Camera</li>
 <li>Tile-Based Game Utilities (TileSet, TileGrid, Grid)</li>
 <li>BMFont File Loading and Pixel Font Rendering</li>
-<li>2D Particle System</li>
+<li>2D CPU Particle System</li>
 <li>Ease Functions</li>
 <li>Some Useful Components (Alarm, StateMachine, Tween, ...)</li>
 </ul>
 </li>
 <li>Tools:<ul>
-<li>Crunch (a texture packer) (modified) (under MIT Licence)</li>
-<li>Sfxr (an 8-bit sound effect generator) (ported) (under MIT Licence)</li>
+<li>crunch (a texture packer) (modified) (MIT Licence)</li>
+<li>sfxr (an 8-bit sound effect generator) (ported) (MIT Licence)</li>
 <li>A Particle Effect Editor</li>
 </ul>
 </li>
@@ -132,61 +136,67 @@ Current Features</h1>
 <li>GoogleTest Integrated for Testing</li>
 <li>CMixer Integrated for Audio Mixing</li>
 <li>Cgltf Integrated for GLTF Model File Loading</li>
-<li>Audio Play (support wav and ogg loading)</li>
-<li>MeshGraphicsComponent</li>
+<li>Simple Audio Playback (support wav and ogg loading)</li>
+<li>Mesh and MeshGraphicsComponent</li>
 <li>SIMD Compile Option</li>
 <li>HTML5 Support</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md9"></a>
 Contribution</h1>
 <p >At current stage, the top priority is to make this engine more robust and more handy.</p>
-<p >So, please don't hesitate to create an issue or pull request if you saw a silly bug.</p>
+<p >So, please don't hesitate to create a pull request if you saw something wrong in the engine.</p>
 <p >And if you encounter any problem or inconvenience when using this engine,</p>
 <p >you can create an issue, then I might be able to help you.</p>
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 Requirements</h1>
 <ul>
 <li>CMake &gt;=3.12</li>
 <li>Python &gt;=3.6</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 Linux</h2>
 <ul>
 <li>GCC &gt;=5.2 or Clang &gt;=3.4</li>
 <li>libSDL2-dev</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 Windows</h2>
 <ul>
-<li>Visual Studio &gt;=2017</li>
+<li>Visual Studio &gt;=2017 or MinGW(GCC &gt;= 5.2)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h2><a class="anchor" id="autotoc_md13"></a>
 MacOS</h2>
 <ul>
 <li>brew install sdl2</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md14"></a>
 How to Build</h1>
-<div class="fragment"><div class="line"># Native on Linux, Windows or MacOS</div>
+<div class="fragment"><div class="line"># How to build executable</div>
 <div class="line">git clone https://github.com/fountainment/cherrysoda-engine.git</div>
 <div class="line">cd cherrysoda-engine</div>
 <div class="line">cmake -E make_directory build</div>
 <div class="line">cd build</div>
 <div class="line">cmake ..</div>
-<div class="line">cmake --build . --config Release</div>
-</div><!-- fragment --><div class="fragment"><div class="line"># Web Assembly on Linux or MacOS</div>
+<div class="line">cmake --build . --config Release --parallel 8</div>
+</div><!-- fragment --><div class="fragment"><div class="line"># How to build webassembly</div>
 <div class="line">git clone https://github.com/emscripten-core/emsdk.git</div>
 <div class="line">./emsdk/emsdk install latest</div>
 <div class="line">./emsdk/emsdk activate latest</div>
 <div class="line">source ./emsdk/emsdk_env.sh</div>
 <div class="line">git clone https://github.com/fountainment/cherrysoda-engine.git</div>
 <div class="line">cd cherrysoda-engine</div>
-<div class="line">mkdir build</div>
+<div class="line">cmake -E make_directory build</div>
 <div class="line">cd build</div>
 <div class="line">emcmake cmake ..</div>
-<div class="line">make -j8</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md14"></a>
-How to Do Performance Profiling with Tracy Profiler</h2>
+<div class="line">cmake --build . --config Release --parallel 8</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md15"></a>
+How to Create Project</h1>
+<p >Use Tools/create_project.py, it will copy the project template and do some string replacement.</p>
+<p >For example:</p>
+<div class="fragment"><div class="line">cd Playground</div>
+<div class="line">python3 ../Tools/create_projects.py HelloWorld</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md16"></a>
+How to Do Performance Profiling with Tracy Profiler</h1>
 <p >First, clone the tracy profiler and put the tracy folder into "Engine" directory:</p>
 <div class="fragment"><div class="line">cd Engine</div>
 <div class="line">git clone https://github.com/wolfpld/tracy.git</div>
@@ -202,41 +212,35 @@ How to Do Performance Profiling with Tracy Profiler</h2>
 <div class="line">git clone https://github.com/wolfpld/tracy.git</div>
 <div class="line">cd tracy/profiler/build/unix/</div>
 <div class="line">make -j8</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md15"></a>
-How to Create Project</h2>
-<p >Use Tools/create_project.py, it will copy the project template and do some string replacement.</p>
-<p >For example:</p>
-<div class="fragment"><div class="line">cd Playground</div>
-<div class="line">python3 ../Tools/create_projects.py HelloWorld</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md16"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md17"></a>
 Tips</h1>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 To Use The Sublime Project</h2>
 <p >You need to install the CMakeBuilder plugin first</p>
 <p >It's recommended to use <code>git update-index --assume-unchanged cherrysoda.sublime-project</code> to ignore project file change locally.</p>
-<h2><a class="anchor" id="autotoc_md18"></a>
+<h2><a class="anchor" id="autotoc_md19"></a>
 To Pack Texture Atlas</h2>
 <p >First, you need to build "Tools/crunch".</p>
 <p >And if you did use "create_project.py" to create a project, you will see a "pack_atlas.py" in project folder.</p>
 <p >Create a folder called "textures" in your project folder,</p>
 <p >put your textures into it, and then <code>python3 pack_atlas.py</code>.</p>
-<h2><a class="anchor" id="autotoc_md19"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 To Enable SIMD</h2>
 <p >You need to add somthing like <code>-DCHERRYSODA_USE_XXXX=1</code> with cmake command.</p>
 <p >Currently, available options are "SSE2" "SSE42" "AVX2" and "NEON".</p>
 <p >For example, <code>cmake .. -DCHERRYSODA_USE_SSE2=1</code> will enable SSE2.</p>
 <p >You can use Bench/MathBench to see how glm's performance changes.</p>
-<h2><a class="anchor" id="autotoc_md20"></a>
+<h2><a class="anchor" id="autotoc_md21"></a>
 To Build on Specific Device</h2>
 <p >Curently, there are cmake options provided for these devices:</p>
 <p >PocketCHIP: <code>cmake .. -DCHIP=1</code></p>
 <p >GameShell: <code>cmake .. -DCPI=1</code></p>
-<h2><a class="anchor" id="autotoc_md21"></a>
+<h2><a class="anchor" id="autotoc_md22"></a>
 To Use Shader Compiler</h2>
 <p >Prebuilt shaderc binary are available on x86_64-Windows and x86_64-Linux.</p>
 <p >If you want or have to build shader compiler on your own, you can add <code>-DCHERRYSODA_BUILD_SHADERC=1</code> with cmake command.</p>
 <p >You can also copy the shaderc binary from bgfx build, copy to "Tools/bin/shaderc.local" (add .exe suffix on Windows)</p>
-<h1><a class="anchor" id="autotoc_md22"></a>
+<h1><a class="anchor" id="autotoc_md23"></a>
 Licence</h1>
 <div class="fragment"><div class="line">MIT License</div>
 <div class="line"> </div>
@@ -259,7 +263,7 @@ Licence</h1>
 <div class="line">LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</div>
 <div class="line">OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</div>
 <div class="line">SOFTWARE.</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md23"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md24"></a>
 Licence of Monocle Engine</h1>
 <div class="fragment"><div class="line">  m o n O c l e</div>
 <div class="line"> </div>

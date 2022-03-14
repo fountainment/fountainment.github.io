@@ -48,11 +48,12 @@ var searchData=
   ['execute_45',['Execute',['../namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219a40cd014b7b6251e3a22e6a45a73a64e1',1,'cherrysoda']]],
   ['executebatch_46',['ExecuteBatch',['../classcherrysoda_1_1_command_batches.html#a5308f2a8ccb0d5015fff711055e58470',1,'cherrysoda::CommandBatches']]],
   ['executecommand_47',['ExecuteCommand',['../classcherrysoda_1_1_commands.html#a5465fe01632f1289b8b3de6cce224048',1,'cherrysoda::Commands::ExecuteCommand(const String &amp;command)'],['../classcherrysoda_1_1_commands.html#a12a9eb38b939c301c8d6915affaf879d',1,'cherrysoda::Commands::ExecuteCommand()']]],
-  ['exists_48',['Exists',['../classcherrysoda_1_1_command_batches.html#a79f71684b8f9f7857c894e0f7dde87d8',1,'cherrysoda::CommandBatches::Exists()'],['../classcherrysoda_1_1_commands.html#aa58fb734d82c8808757e5e010955678c',1,'cherrysoda::Commands::Exists()']]],
+  ['exists_48',['Exists',['../classcherrysoda_1_1_commands.html#aa58fb734d82c8808757e5e010955678c',1,'cherrysoda::Commands']]],
   ['exists_49',['exists',['../struct_command_trie_node.html#aceb32d668451b617ef87c0ddd819904b',1,'CommandTrieNode']]],
-  ['exit_50',['Exit',['../classcherrysoda_1_1_engine.html#a5a84db2911ba0cb28d1765c68d8eee8f',1,'cherrysoda::Engine']]],
-  ['expoin_51',['ExpoIn',['../classcherrysoda_1_1_ease.html#ad063ea0fa32dc17fabc0876345344466',1,'cherrysoda::Ease']]],
-  ['expoinout_52',['ExpoInOut',['../classcherrysoda_1_1_ease.html#aded7488875b10433c0f4aab3e31a3641',1,'cherrysoda::Ease']]],
-  ['expoout_53',['ExpoOut',['../classcherrysoda_1_1_ease.html#ac038d82f978f479f152d07590ef58b7a',1,'cherrysoda::Ease']]],
-  ['exsel_54',['Exsel',['../namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219afe1ba58a3c9cdc84b6e790ebdd8fde65',1,'cherrysoda']]]
+  ['exists_50',['Exists',['../classcherrysoda_1_1_command_batches.html#a79f71684b8f9f7857c894e0f7dde87d8',1,'cherrysoda::CommandBatches']]],
+  ['exit_51',['Exit',['../classcherrysoda_1_1_engine.html#a5a84db2911ba0cb28d1765c68d8eee8f',1,'cherrysoda::Engine']]],
+  ['expoin_52',['ExpoIn',['../classcherrysoda_1_1_ease.html#ad063ea0fa32dc17fabc0876345344466',1,'cherrysoda::Ease']]],
+  ['expoinout_53',['ExpoInOut',['../classcherrysoda_1_1_ease.html#aded7488875b10433c0f4aab3e31a3641',1,'cherrysoda::Ease']]],
+  ['expoout_54',['ExpoOut',['../classcherrysoda_1_1_ease.html#ac038d82f978f479f152d07590ef58b7a',1,'cherrysoda::Ease']]],
+  ['exsel_55',['Exsel',['../namespacecherrysoda.html#ac4511e57b9951201ef5a5d7cc7d96219afe1ba58a3c9cdc84b6e790ebdd8fde65',1,'cherrysoda']]]
 ];
