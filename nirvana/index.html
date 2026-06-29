@@ -2,58 +2,189 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <style>
-            * { margin:0; padding:0; }
-            body { background-color: black; }
-            html, body { width: 100%; height: 100%; }
-            #loading_ui { position: absolute; z-index: -1; }
-            #loading_ui, #canvas { height: 100vh; width: 100vw; display: block; border: 0px; }
+            * { margin: 0; padding: 0; }
+            html, body { width: 100%; height: 100%; background: #000; overflow: hidden; }
+            #loading_ui, #canvas {
+                position: absolute; inset: 0; display: block;
+                width: 100vw; height: 100vh; border: 0;
+            }
+            #loading_ui { z-index: 0; }
+            #canvas { z-index: 1; }
         </style>
         <script type='text/javascript'>
-            window.onload = focuswindow;
-            window.onmousedown = focuswindow;
-            function focuswindow() { window.focus(); }
+            window.onload = window.onmousedown = function () { window.focus(); };
         </script>
     </head>
     <body>
-        <div class="emscripten_border">
-            <canvas id="loading_ui"></canvas>
-            <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1"></canvas>
-        </div>
-        <script>
-            var loading_ui_canvas = document.getElementById("loading_ui");
-            var ctx = loading_ui_canvas.getContext("2d");
+        <canvas id="loading_ui"></canvas>
+        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1"></canvas>
+        <script type='text/javascript'>
+            (function () {
+                'use strict';
+                var EXEC = 'playground_nirvana';
+                var loadingCanvas = document.getElementById('loading_ui');
+                var appCanvas = document.getElementById('canvas');
+                var ctx = loadingCanvas.getContext('2d');
 
-            ctx.fillStyle = '#000000';
-            ctx.fillRect(0, 0, 300, 150);
-
-            ctx.fillStyle = "#ffffff";
-            ctx.fillRect(18, 71, 1, 8);
-            ctx.fillRect(281, 71, 1, 8);
-            ctx.fillRect(18, 71, 264, 1);
-            ctx.fillRect(18, 78, 264, 1);
-
-            var Module = {
-                canvas: document.getElementById("canvas"),
-                preRun: [],
-                postRun: [],
-                setStatus: function(text) {
-                    if (!Module.setStatus.last) Module.setStatus.last = { time: Date.now(), text: '' };
-                    if (text === Module.setStatus.last.text) return;
-                    var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
-                    var now = Date.now();
-                    if (m && now - Module.setStatus.last.time < 30) return;
-                    Module.setStatus.last.time = now;
-                    Module.setStatus.last.text = text;
-                    if (m) {
-                        var progress = parseInt(m[2]) / parseInt(m[4]);
-                        ctx.fillRect(20, 73, 260 * progress, 4);
-                    } else {
-                        loading_ui_canvas.style.display = 'none';
-                    }
+                function fitBuffer() {
+                    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+                    loadingCanvas.width = Math.floor(window.innerWidth * dpr);
+                    loadingCanvas.height = Math.floor(window.innerHeight * dpr);
                 }
-            };
+                fitBuffer();
+                window.addEventListener('resize', fitBuffer);
+
+                var P = {
+                    wl: 0, wt: null,
+                    dl: 0, dt: null,
+                    compiling: false, fallback: false, hidden: false, label: 'Loading'
+                };
+
+                function determinate() {
+                    return !P.fallback && !P.compiling && P.wt != null && P.dt != null;
+                }
+                function fraction() {
+                    if (P.compiling) return 1;
+                    if (!determinate()) return null;
+                    var tot = P.wt + P.dt;
+                    return tot > 0 ? (P.wl + P.dl) / tot : 0;
+                }
+                function formatBytes(n) {
+                    if (n < 1024) return n + ' B';
+                    if (n < 1048576) return (n / 1024).toFixed(0) + ' KB';
+                    return (n / 1048576).toFixed(1) + ' MB';
+                }
+
+                function roundRect(c, x, y, w, h, r) {
+                    r = Math.min(r, w / 2, h / 2);
+                    c.beginPath();
+                    c.moveTo(x + r, y);
+                    c.arcTo(x + w, y, x + w, y + h, r);
+                    c.arcTo(x + w, y + h, x, y + h, r);
+                    c.arcTo(x, y + h, x, y, r);
+                    c.arcTo(x, y, x + w, y, r);
+                    c.closePath();
+                }
+
+                function actualDraw() {
+                    var W = loadingCanvas.width, H = loadingCanvas.height;
+                    ctx.clearRect(0, 0, W, H);
+                    var bw = Math.min(W * 0.6, 640);
+                    var bh = Math.max(6, Math.round(H * 0.012));
+                    var bx = (W - bw) / 2;
+                    var by = Math.round(H / 2 - bh / 2);
+                    ctx.fillStyle = 'rgba(255,255,255,0.15)';
+                    roundRect(ctx, bx, by, bw, bh, bh / 2);
+                    ctx.fill();
+
+                    var f = fraction();
+                    ctx.fillStyle = '#7c9cff';
+                    if (f === null) {
+                        var t = (Date.now() % 2400) / 2400;
+                        var tri = t < 0.5 ? t * 2 : 2 - t * 2;
+                        var segW = 0.25;
+                        var pos = tri * (1 - segW);
+                        roundRect(ctx, bx + bw * pos, by, bw * segW, bh, bh / 2);
+                        ctx.fill();
+                    } else {
+                        var fc = Math.max(0, Math.min(1, f));
+                        if (fc > 0) {
+                            roundRect(ctx, bx, by, Math.max(bh, bw * fc), bh, bh / 2);
+                            ctx.fill();
+                        }
+                    }
+
+                    ctx.fillStyle = 'rgba(255,255,255,0.85)';
+                    ctx.font = Math.max(12, Math.round(H * 0.022)) + 'px system-ui, sans-serif';
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    var label = P.label || 'Loading';
+                    var info = '';
+                    if (f === null) {
+                        if (P.wl + P.dl > 0) info = formatBytes(P.wl + P.dl);
+                    } else {
+                        info = Math.round(f * 100) + '%';
+                    }
+                    ctx.fillText(label + (info ? '   ' + info : ''), W / 2, by - bh - Math.round(H * 0.022));
+                }
+
+                function loadingLoop() {
+                    if (P.hidden) return;
+                    actualDraw();
+                    requestAnimationFrame(loadingLoop);
+                }
+                requestAnimationFrame(loadingLoop);
+
+                function hideLoading() {
+                    P.hidden = true;
+                    loadingCanvas.style.transition = 'opacity .3s ease';
+                    loadingCanvas.style.opacity = '0';
+                    setTimeout(function () { loadingCanvas.style.display = 'none'; }, 320);
+                }
+
+                function checkOk(resp) {
+                    if (!resp.ok || !resp.body) throw new Error(resp.status + ' ' + resp.url);
+                    return resp;
+                }
+                function usableTotal(resp) {
+                    var orig = resp.headers.get('X-Original-Content-Length');
+                    if (orig && Number(orig) > 0) return Number(orig);
+                    if (resp.headers.get('Content-Encoding')) return null;
+                    var cl = resp.headers.get('Content-Length');
+                    return (cl != null && Number(cl) > 0) ? Number(cl) : null;
+                }
+                async function readBody(resp, onByte) {
+                    var reader = resp.body.getReader();
+                    var chunks = [];
+                    var loaded = 0;
+                    for (;;) {
+                        var part = await reader.read();
+                        if (part.done) break;
+                        chunks.push(part.value);
+                        loaded += part.value.length;
+                        onByte(loaded);
+                    }
+                    var buf = new Uint8Array(loaded);
+                    for (var off = 0, i = 0; i < chunks.length; i++) {
+                        buf.set(chunks[i], off);
+                        off += chunks[i].length;
+                    }
+                    return buf.buffer;
+                }
+
+                var Module = {
+                    canvas: appCanvas,
+                    setStatus: function (text) { if (text === 'Running...') hideLoading(); },
+                    postRun: [hideLoading]
+                };
+                globalThis.Module = Module;
+
+                function loadMainScript() {
+                    var s = document.createElement('script');
+                    s.src = EXEC + '.js';
+                    document.body.appendChild(s);
+                }
+                function wasmTick(n) { P.wl = n; P.label = 'Downloading'; }
+                function dataTick(n) { P.dl = n; P.label = 'Downloading'; }
+
+                Promise.all([
+                    fetch(EXEC + '.wasm', { credentials: 'same-origin' }).then(checkOk),
+                    fetch(EXEC + '.data', { credentials: 'same-origin' }).then(checkOk)
+                ]).then(function (resps) {
+                    P.wt = usableTotal(resps[0]);
+                    P.dt = usableTotal(resps[1]);
+                    return Promise.all([readBody(resps[0], wasmTick), readBody(resps[1], dataTick)]);
+                }).then(function (bufs) {
+                    Module.wasmBinary = bufs[0];
+                    Module.getPreloadedPackage = function () { return bufs[1]; };
+                    P.compiling = true; P.label = 'Compiling';
+                }).catch(function (e) {
+                    console.error('[fountain] preload failed, fallback to runtime fetch:', e);
+                    P.fallback = true; P.label = 'Loading';
+                }).finally(loadMainScript);
+            })();
         </script>
-        <script async="" type="text/javascript" src="playground_nirvana.js"></script>
     </body>
 </html>
